@@ -1,7 +1,7 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
+# NAME: Nathan Kirsch
+# DATE: 3/15/2026
 # BRIEF DESCRIPTION:  
 
 
@@ -14,7 +14,23 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+print("===== Temperature Converter =====")
+print()
+print("1. Convert from Celsius to Fahrenheit")
+print("2. Convert from Fahrenheit to Celsius")
+print()
 
+choice = int(input("Please choose from the above menu: "))
+temp = float(input("Enter a temperature to convert: "))
+
+if choice == 1:
+    converted = (temp * 9/5) + 32
+    print()
+    print(f"{temp} degrees Celsius is {converted} degrees Fahrenheit.")
+elif choice == 2:
+    converted = (temp - 32) * 5/9
+    print()
+    print(f"{temp} degrees Fahrenheit is {converted} degrees Celsius.")
 
 
 
@@ -92,7 +108,7 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
-
+I learned the importance of paying close attention to the order of operations and variable types. Specifically, ensuring that inputs are treated as float values was necessary to get the decimal precision required in the sample output.
 
 
 
